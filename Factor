@@ -1,0 +1,21 @@
+class Factor
+{
+ public static void main(String[] args)
+{
+Factor rf = new Factor();
+rf.printfact(1);
+ }
+ int num=1;
+public void printfact(int i)
+{
+ num = num*i;
+if(i<5)
+{
+ printfact(i+1);
+}
+else
+{
+ System.out.println(num);
+}
+}
+}
