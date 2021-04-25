@@ -1,0 +1,44 @@
+public class Star {
+	public static void main(String[] args) 
+	{
+	Star ss = new Star();
+	 ss.printrow(1);
+	}
+	public void printsim(int j) {
+		
+		if(1<=j&&j!=0)
+			{System.out.print("*"+" ");
+			j=j-1;
+			printsim(j);
+			
+		}
+		else
+			System.out.println();
+			return;
+	}
+	public void printcol(int k) {
+		if(k<=5)
+		{
+		System.out.print(" ");
+		
+		printcol(k+1);
+		}
+		else
+			//printsim(k-1);
+			return;
+				
+	}
+public void printrow(int i) {
+		if(i<=5)
+		{
+			printcol(i);
+			printsim(i);
+			i=i+1;
+			printrow(i);
+			
+			
+		}
+		
+	}
+
+}
