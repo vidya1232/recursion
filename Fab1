@@ -1,0 +1,19 @@
+public class Fab1 {
+
+	public static void main(String[] args) {
+		Fab1 ff=new Fab1();
+		ff.calmethod(1,1);
+
+	}
+
+	private void calmethod(int i, int j) {
+		if((i+j)<20)
+		{
+			System.out.println((i+j));
+			
+			calmethod(j,(i+j));
+		}
+		
+	}
+
+}
