@@ -1,0 +1,21 @@
+package vidya;
+
+public class Fab {
+
+	public static void main(String[] args) {
+		//int f1=0,f2=1,f3;
+		Fab vv =new Fab();
+vv.calmethod(0,1);
+	}
+
+	private void calmethod(int i, int j) {
+		int k=i+j;
+		System.out.println("the sum of "+i+"+"+j+"="+k);
+		if(i<21)
+		{
+			calmethod(j, k);
+		}
+		
+	}
+
+}
