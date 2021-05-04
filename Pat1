@@ -1,0 +1,32 @@
+public class Pat1 {
+public static void main(String[] args) 
+	{
+	Pat1 nn =new Pat1()	;
+	Pat1.row(1);
+	
+	}
+private static void row(int i)
+	{
+	if(i<=7)
+	{
+		int k =1;
+		Pat1.col(k,i);
+	}
+		
+	}
+private static void col(int k,int n) {
+		if(k<=n)
+	{
+		System.out.print(k);
+		k++;
+		col(k,n);
+	}
+	else
+	{
+		System.out.println();
+		n++;
+		row(n);
+	}
+	}
+
+}
