@@ -1,0 +1,34 @@
+public class Pat5 {
+static int n=1;
+	public static void main(String[] args) {
+		Pat5 ss =new Pat5();
+		ss.cal(1);
+		
+
+	}
+	private static void cal(int i) {
+		if(i<=7)
+		{
+			Pat5.col(i);
+		}
+		
+	}
+	private static void col(int j) {
+	
+		if(j>=1)
+		{
+			System.out.print(j);
+			j--;
+			col(j);
+			
+		}
+		else
+		{
+			n++;
+			System.out.println();
+			
+			cal(n);
+		}
+	}
+
+}
