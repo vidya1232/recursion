@@ -1,0 +1,33 @@
+public class Pat6 {
+static int n=6;
+static int m=1;
+	public static void main(String[] args) {
+		Pat6 ss = new Pat6();
+		ss.cal(m);
+
+	}
+	private static void cal(int i) {
+	if(i<=5)
+	{
+		n--;
+		Pat6.col(1,n);
+	}
+	}
+	private static void col(int j, int n2) {
+	if(j<=n)
+	{
+		System.out.print(j);
+		j++;
+		col(j,n);
+		
+	}
+	else
+	{
+		System.out.println();
+		m++;
+		cal(m);
+	}
+		
+	}
+
+}
