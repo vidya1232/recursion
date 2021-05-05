@@ -1,0 +1,36 @@
+public class pat3 {
+
+	public static void main(String[] args) {
+		pat3 ss= new pat3();
+		ss.calmethod(1);
+	}
+
+	private static void calmethod(int i) {
+		if(i<=7)
+		{
+			
+				pat3.col(i,0);
+			
+		}
+		
+		
+	}
+
+	private static void col(int j,int k) {
+	
+		if(j>k)
+	{
+		System.out.print(j);
+		k++;
+		col(j,k);
+		
+	}
+	else
+	{
+		System.out.println();
+		j++;
+		calmethod(j);
+	}
+	}
+
+}
