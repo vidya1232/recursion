@@ -1,0 +1,33 @@
+public class Pat4 {
+	int n=0;
+
+	public static void main(String[] args) {
+	Pat4 ss = new Pat4();
+	
+	ss.calmethod(1);
+	
+	}
+
+	private void calmethod(int i) {
+		if(i<=7)
+		{
+	
+		col(i,7);
+		System.out.println();
+		calmethod(i+1);
+		}
+		
+	}
+
+	private void col(int j, int k) {
+		if(j>=1)
+		{
+			System.out.print(k);
+			
+			col(j-1,k-1);
+		}
+		
+		
+	}
+
+}
