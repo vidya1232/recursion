@@ -1,0 +1,31 @@
+public class Pat10 {
+
+	public static void main(String[] args) {
+		Pat10 ss = new Pat10();
+		ss.calmethod(5);
+
+	}
+
+	private void calmethod(int i) {
+		if(i>=1)
+		{
+			Pat10.col(5,i);
+			System.out.println();
+			calmethod(i-1);
+		}
+		
+	}
+
+	private static void col(int j,int k ) {
+		if(j>=1 )
+		{
+			System.out.print(k);
+			j--;
+			col(j,k);
+			
+		}
+		
+		
+	}
+
+}
