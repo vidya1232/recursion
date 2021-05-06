@@ -1,0 +1,33 @@
+public class Pat8 {
+	static int n=1;
+	public static void main(String[] args) {
+		
+		Pat8 ss = new Pat8();
+		ss.calmethod(n);
+	}
+
+	private void calmethod(int n) {
+if(n<=5)
+{
+	col(n,5);
+}
+		
+	}
+
+	private void col(int j, int k) {
+		
+		if(j<=k)
+		{
+			System.out.print(j);
+			j++;
+			col(j,k);
+		}
+		else
+		{
+			System.out.println();
+			n++;
+			calmethod(n);
+		}
+	}
+		
+}
