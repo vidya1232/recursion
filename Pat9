@@ -1,0 +1,17 @@
+public class Pat9 {
+	static int n=2;
+	public static void main(String[] args)
+	{
+		
+	//Pat9 ss = new Pat9();
+	Pat9.calmethod(5);
+	Pat9.method(n);
+	
+	}
+private static void calmethod(int i) {
+		if(i>=1)
+		{
+			Pat9.col(1,i);
+		}
+		
+	}
