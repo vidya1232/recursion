@@ -1,0 +1,29 @@
+public class Pat7 {
+static int n=1;
+	public static void main(String[] args) {
+		Pat7 ss = new Pat7();
+		ss.calmethod(n);
+
+	}
+	private static void calmethod(int i) {
+		if(i<=8)
+		{
+			Pat7.col(i,1);
+		}
+	}
+	private static void col(int j, int k) {
+	if(j>=k)
+	{
+		System.out.print(j);
+		j--;
+		col(j,k);
+	}
+	else
+	{
+		System.out.println();
+		n++;
+		calmethod(n);
+	}
+	}
+
+}
