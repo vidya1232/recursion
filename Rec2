@@ -1,0 +1,29 @@
+public class Rec2 {
+
+	public static void main(String[] args) {
+	Rec2 cc = new Rec2();
+	cc.calmethod(7);
+
+	}
+
+	private void calmethod(int i) {
+		if(i>=1)
+		{
+			col(i);
+			System.out.println();
+		
+			calmethod(i-1);
+		}
+		
+	}
+
+	private void col(int j) {
+		if(j>=1)
+		{
+			System.out.print(j);
+			col(j-1);
+		}
+		
+	}
+
+}
