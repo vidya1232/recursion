@@ -1,0 +1,21 @@
+public class Namegame {
+
+	public static void main(String[] args) {
+	String name ="vidyamurugan";
+	char [] aa =name.toCharArray();
+	Namegame ng = new Namegame();
+	ng.calmethod(aa,0);
+
+	}
+
+	private void calmethod(char[] aa, int i) {
+		if(i<aa.length)
+		{
+			System.out.print(aa[i]+"  ");
+			calmethod(aa,i+1);
+		}
+		
+		
+	}
+
+}
