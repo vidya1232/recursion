@@ -1,0 +1,42 @@
+public class Namerev {
+	String ss ="vidya_murugan_";
+    char []e = ss.toCharArray();
+	public static void main(String[] args) {
+		
+        Namerev vv =new Namerev();
+        vv.first(0,0);
+        
+	}
+
+	public void first(int i, int j) {
+	if(e[i]=='_')
+	{
+		calmethod(i,j);
+		
+	}
+	else
+	{
+		
+		first(i+1,j);
+		
+	}
+		
+	}
+
+	private void calmethod(int i, int j) {
+		if(j<i)
+		{
+			System.out.print(e[j]);
+			calmethod(i,j+1);
+		}
+		else
+		{
+			if(i<e.length-1&&j<e.length-1)
+			{
+				System.out.println();
+			first(i+1,j+1);
+		}
+	}
+
+}
+}
